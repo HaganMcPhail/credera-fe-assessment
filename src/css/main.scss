@@ -1,0 +1,63 @@
+@import "variables";
+@import "fonts";
+
+body {
+  background-color: $offWhite;
+  width:100vw;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "lato-regular", "opensans";
+}
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.card {
+  width: 345px;
+  margin: 50px auto;
+  background-color: $white;
+  border: 1px solid rgb(206, 205, 204);
+  img.article-bg {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .card-info {
+    text-align: left;
+    margin: 0px 0px;
+    padding: 30px 40px;
+    border-top: 5px solid $brandOrange;
+    .date {
+      font-size: .875em;
+      color: $dateColor;
+      font-weight: bold;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+    .title {
+      padding-top: 8px;
+      padding-bottom: 20px;
+      font-size: 1.3em;
+      color: $titleColor;
+      line-height: 1.3em;
+    }
+    .preview {
+      font-size: .875em;
+      font-family: "Merriweather";
+      color: $previewColor;
+      line-height: 1.5em;
+    }
+    .full-article {
+      padding-top: 45px;
+      a, a:active, a:visited {
+        font-size: .875em;
+        color: $brandOrange;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
